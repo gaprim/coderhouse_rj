@@ -1,30 +1,17 @@
-import './App.css'
-import Navbar from './Components/Navbar';
+import React from "react";
+import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
+import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <h1>E-Commerce</h1>
-    </div>
-
-    //   <div className="App">
-    //     <header className="App-header">
-    //       <img src={logo} className="App-logo" alt="logo" />
-    //       <p>
-    //         Clase 2 Edit <code>src/App.js</code> and save to reload.
-    //       </p>
-    //       <a
-    //         className="App-link"
-    //         href="https://reactjs.org"
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //       >
-    //         Learn React
-    //       </a>
-    //     </header>
-    //   </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <Navbar />
+        <ItemListContainer greeting="¡Bienvenido! Disfruta tu compra" />
+        <h1>E-Commerce</h1>
+      </div>
+    );
+  }
 }
-
 export default App;

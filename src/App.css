@@ -1,6 +1,7 @@
 .App {
   width: 100vw;
   height: 100vh;
+  text-align: center;
 }
 
 body {
@@ -8,7 +9,7 @@ body {
   padding: 0;
 }
 
-button:hover {
+/* button:hover {
   cursor: pointer;
 }
 
@@ -41,14 +42,12 @@ display: flex;
 
 .Navbar .leftSide #hidden{
   display: flex;
-  
-  
 }
 
 .Navbar .leftSide .links a {
   text-decoration: none;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 15px;
   
 }
@@ -76,22 +75,24 @@ display: flex;
   width: 70px;
   font-size: 16px;
 
-}
+} */
 
-@media only screen and (max-width: 850px){
+/* ANULACIÓN TEMPORAL DEL MEDIA QUERY 
+
+/* <@media only screen and (max-width: 850px){
   .Navbar .leftSide .links a {
     font-size: 20px;
   }
-}
+} */
 
-@media only screen and (max-width: 750px){
+/* @media only screen and (max-width: 750px){
   .Navbar .leftSide .links a {
     font-size: 15px;
     display: flex;
   }
-}
+} */
 
-@media only screen and (max-width: 650px){
+/* @media only screen and (max-width: 650px){
   .Navbar .leftSide button {
     display: flex;
   }
@@ -116,4 +117,4 @@ display: flex;
     margin: 10px;
     font-size: 25px;
   }
-}
+} */
