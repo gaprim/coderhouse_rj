@@ -18,7 +18,7 @@ export default function CustomizedBadges() {
   return (
     <IconButton aria-label="cart" >
       <StyledBadge badgeContent={0} color="secondary" showZero>
-        <ShoppingCartIcon className = "CartColor" color="primary" />
+        <ShoppingCartIcon className = "CartColor" />
       </StyledBadge>
     </IconButton>
   );
