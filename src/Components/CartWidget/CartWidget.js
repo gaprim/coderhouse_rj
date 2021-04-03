@@ -2,7 +2,7 @@ import Badge from "@material-ui/core/Badge";
 import { withStyles } from "@material-ui/core/styles";
 import IconButton from "@material-ui/core/IconButton";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-import "./styles.css";
+import "./CartWidget.css";
 
 
 const StyledBadge = withStyles((theme) => ({

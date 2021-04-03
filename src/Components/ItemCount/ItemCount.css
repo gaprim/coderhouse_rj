@@ -1,0 +1,10 @@
+.ItemCount {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+.ItemCountItem{
+    padding: 10px;
+  }
