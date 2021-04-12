@@ -25,21 +25,21 @@ export default class ItemCount extends Component {
   render() {
     return (
       <div className='ItemCount'>
-        
-        <div className='ItemCountItem'>
-          <Button compact size="mini" positive onClick={this.handleIncrement}>
-            +
+               <div className='ItemCountItem'>
+          <Button compact size="mini" negative onClick={this.handleDecrement}>
+            -
           </Button>
         </div>
         <div className='ItemCountItem'>
             <p>{this.state.count}</p>
         </div>
         <div className='ItemCountItem'>
-          <Button compact size="mini" negative onClick={this.handleDecrement}>
-            -
+          <Button compact size="mini" positive onClick={this.handleIncrement}>
+            +
           </Button>
         </div>
-        <div>
+        
+      <div>
           <Button compact basic>
             Agregar al carrito
           </Button>
