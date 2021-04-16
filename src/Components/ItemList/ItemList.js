@@ -1,13 +1,6 @@
 import { Component } from "react";
 import "./ItemList.css";
-import data from './data/data.js';
-
-// const productos = [
-//   { id: 1, title: "Producto A", price: 9.1, pictureUrl:'' },
-//   { id: 2, title: "Producto B", price: 4.6, pictureUrl:'' },
-//   { id: 3, title: "Producto C", price: 3.5, pictureUrl:'' },
-//   { id: 4, title: "Producto D", price: 3.4, pictureUrl:'' },
-// ];
+import productos from "../data/data.js";
 
 class ItemList extends Component {
   constructor() {
@@ -17,21 +10,31 @@ class ItemList extends Component {
     };
   }
 
-componentDidMount(){
+  componentDidMount() {
     setTimeout(() => {
-        this.setState({state_productos: productos})
-    },2000);
-}
+      this.setState({ state_productos: productos });
+    }, 5000);
+  }
 
   render() {
-    return <div>
-        <ul className ='listaProd'>
-            {this.state.state_productos.map((a) => {
-                return <li>{a.name} - {a.price}</li>
-            })}
+    return (
+      <div>
+        <ul>
+          {this.state.state_productos.map((a) => {
+            return <li>{a.name}</li>;
+          })}
         </ul>
-    </div>;
+      </div>
+    );
   }
 }
+
+// <div>
+//   {data.productos.map((productos) =>
+//     <div>
+//       <h2>{productos.name}</h2>
+//     </div>
+//   )}
+// </div>
 
 export default ItemList;
