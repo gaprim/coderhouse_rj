@@ -1,5 +1,5 @@
 import { Component } from "react";
-import "./ItemList.css";
+import Item from "../Item/Item.js"
 import productos from "../data/data.js";
 
 class ItemList extends Component {
@@ -21,20 +21,12 @@ class ItemList extends Component {
       <div>
         <ul>
           {this.state.state_productos.map((a) => {
-            return <li>{a.name}</li>;
+            return <Item name={a.name} imagen={a.image} price= {a.price} description={a.description}/>;
           })}
         </ul>
       </div>
     );
   }
 }
-
-// <div>
-//   {data.productos.map((productos) =>
-//     <div>
-//       <h2>{productos.name}</h2>
-//     </div>
-//   )}
-// </div>
 
 export default ItemList;
