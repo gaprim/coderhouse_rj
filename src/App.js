@@ -12,7 +12,7 @@ class App extends React.Component {
       <div className="App">
         <Navbar />
         <h1>E-Commerce</h1>
-        <ItemListContainer greeting="¡Bienvenido! Disfruta tu compra" />
+        <ItemListContainer />
       </div>
     );
   }

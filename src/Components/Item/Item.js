@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import { Card, Image } from "semantic-ui-react";
 import ItemCount from "../ItemCount/ItemCount";
-import "./Item.css"
+import "./Item.css";
 
 export class Item extends Component {
   render() {
     return (
-      <div className="cards">
-          <div className="item-card">
-          <Card>
+      <div className="card"> 
+        <Card>
           <Image src={this.props.imagen} wrapped ui={false} />
           <Card.Content>
             <Card.Header>{this.props.name}</Card.Header>
@@ -21,8 +20,6 @@ export class Item extends Component {
             <ItemCount />
           </Card.Content>
         </Card>
-          </div>
-        
       </div>
     );
   }

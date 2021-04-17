@@ -1,12 +1,7 @@
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
-}
-.item-card {
-  flex: 1 0 auto;
-  margin: 10px;
+.card {
+  display: block;
+  flex-basis: auto;
+  align-self: auto;
+  margin: 0px;
+  padding: 10px;
 }
